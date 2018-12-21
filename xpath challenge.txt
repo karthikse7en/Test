@@ -1,0 +1,21 @@
+Hi,
+Challenges in Xpath:
+	Locators are mostly dynamic in ICDD/RTOB, where ID and name property are used minimal.
+	Xpath’s are not simple, locators are identified by traversing from one tag to other.
+
+Refer below xpath’s which was used in automation
+By.xpath("(//span[text()='Sub-segment']/../../../following-sibling::div//input)");
+By.xpath("//table[@class='summaryTabOverview']//td[contains(.,'Risk Level')]/following-sibling::td[1]");
+By.xpath("//*[text()='Passport Number:']/../td[7]");
+By.xpath("//*[text()='Detection Datetime']/../following-sibling::tr/following-sibling::tr/td[6]");
+By.xpath("//table[@id='alertsModel']//tr[" + i + "]/td[" + stepColumnNumber + "]"));
+
+So, to identify an unique xpath is a challenging work.
+
+Best-case:
+Simple Xpath’s using className/Tagname/text() can be implemented.
+
+
+                                                                                                                                                                 
+Regards,
+Karthik
